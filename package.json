@@ -1,0 +1,25 @@
+{
+  "name": "LaSocquette",
+  "version": "1.0.0",
+  "description": "Groupe 2 Lien netlify :",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/pages/index.html",
+    "build": "parcel build src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nojaas/LaSocquette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nojaas/LaSocquette/issues"
+  },
+  "homepage": "https://github.com/Nojaas/LaSocquette#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  }
+}
