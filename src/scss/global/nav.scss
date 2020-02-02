@@ -46,7 +46,7 @@
     user-select: none
 }
 
-.nav__menu {
+.nav__list {
     display: none;
 }
 
@@ -74,17 +74,17 @@
     }
     
     .nav__menu {
-        position: absolute;
-        @include flex-center;
         height: auto;
         width: auto;
-        align-items: center;
-        user-select: none
     }
-
-    .nav__text {
-        display: inline-block;
+    .nav__list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav__text { 
         font-size: 22px;
+        text-transform: uppercase;
         cursor: pointer;
         user-select: none;
         margin: 0 50px;
@@ -92,10 +92,4 @@
     }
 }
 
-@media (max-width:1290px) {
-    .nav__text {
-        margin: 0 15px;
-        transition: all 0.3s ease-in;
-        font-size: 18px;
-    }
-}
+
