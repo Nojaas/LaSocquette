@@ -1,0 +1,32 @@
+.nav {
+    background-color: red;
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    z-index: 1;
+}
+
+.nav__account {
+    position:absolute;
+    top:50%;
+    left:90vw;
+    transform:translate(-50%, -50%);
+
+}
+
+.nav__basket {
+    position:absolute;
+    top:50%;
+    left:95vw;
+    transform:translate(-50%, -50%);
+}
+
+.nav__logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 780px) {
+
+}
