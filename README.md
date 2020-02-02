@@ -1,6 +1,6 @@
 # LaSocquette
 Groupe 2
-Lien netlify : 
+Lien netlify : https://lasocquette.netlify.com/
 
 LEROY Jason
 BINET Nathan
