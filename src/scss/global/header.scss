@@ -14,6 +14,7 @@ header {
         &__burger {
             display: flex;
             flex-direction: column;
+
             align-items: flex-end;
             justify-content: space-between;
             
@@ -21,6 +22,7 @@ header {
             width: 50px;
             margin-left: 0px;
             cursor: pointer;
+
 
             span {
                 border-radius: 100px;
@@ -160,6 +162,7 @@ header {
                 margin-left: 5%;
             }
             
+
             &__menu {
                 height: auto;
                 width: auto;
@@ -168,11 +171,13 @@ header {
                 
             }
 
+
             &__list {
                 display: flex;
                 align-items: center;  
                 justify-content: center;  
             
+
         
             }
             &__text { 
@@ -187,6 +192,8 @@ header {
                 transition: all 0.3s ease-in;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
+
         }
+               
     }
 }
