@@ -2,6 +2,43 @@ body {
 
 }
 
+.article1 {
+  display: flex;
+  flex-wrap: wrap;
+  
+  background-color: lightblue;
+  height: 584px;
+  width: 100%;
+  
+  
+  &__personnalisation {
+    background-color: white;
+    width: 284px;
+    height: 180px;
+   
+    margin: auto 60px;
+  }
+   
+    &__chaussettes {
+    width: 792px;
+    height: 613px;
+    margin-top: 10%;
+    text-align: center;
+    }
+    
+    &__bouton {
+    width: 210px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin-top: 200px;
+    }
+   } 
+  
+
 
 
 @media (min-width:980px) {
@@ -10,7 +47,7 @@ body {
 
 .article1 {
   display: flex;
-  flex: auto;
+  flex-direction: column;
   margin: 40px;
   background-color: lightblue;
   height: 613px;
@@ -27,11 +64,25 @@ body {
     width: 792px;
     height: 613px;
     background-color: white;
-    
+    margin: auto;
+
+    }
+
+    &__bouton {
+      width: 210px;
+      height: 50px;
+      background-color: black;
+      text-align: center;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      justify-content: center;
+      position: relative;
+    }
     
    } 
   
-}
+
 
 
 
