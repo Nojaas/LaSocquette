@@ -1,8 +1,11 @@
+
+
 .nav {
     width: 100vw;
     height: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 
     &__account {
@@ -41,7 +44,8 @@
 
     &__list {
         display: none;
-    }
+        
+     }
 
 @media (min-width:980px) {
 
@@ -69,26 +73,26 @@
     
     &__menu {
         height: auto;
-        width: 65vw;
+        width: auto;
         display: flex;
-       
         line-height: 10em;
+        
         
     }
 
     &__list {
-       
-        margin-left: 5em;
+        margin-left: 20vw;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: center;  
+        justify-content: center;  
        
    
     }
     &__text { 
-       
+
+        
         width: 10rem;;
-        font-size: em;
+        font-size: 1em;
         text-transform: uppercase;
         cursor: pointer;
         user-select: none;
