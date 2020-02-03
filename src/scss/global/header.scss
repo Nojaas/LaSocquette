@@ -1,5 +1,3 @@
-
-
 .nav {
     width: 100vw;
     height: 60px;
@@ -7,27 +5,62 @@
     justify-content: space-between;
     align-items: center;
 
-
-    &__account {
-        position: absolute;
-        right: 35px;
-        width: 25px;
-        height: 25px;
-        padding-right: 5px;
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+        height: 50px;
+        width: 50px;
+        margin-left: 0px;
         cursor: pointer;
-        transition: all 0.3s ease-in;
-        user-select: none
+
+        span {
+            border-radius: 100px;
+            display: block;
+            height: 15%;
+            background-color: black;
+              
+            &:first-child {
+                width: 50%;
+                transition: width 0.3s;
+            }
+              
+            &:nth-child(2) {
+                width: 100%;
+                transition-timing-function: linear;
+                transition: width 0.3s;
+            }
+              
+            &:last-child {
+                width: 75%;
+                transition: width 0.3s;
+            }
+        }
     }
 
-    &__basket {
-        position: absolute;
-        right: 0;
-        width: 33px;
-        height: 33px;
-        padding-right: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease-in;
-        user-select: none
+    &__burger.is-active {
+        
+        span {
+            border-radius: 100px;
+            display: block;
+            height: 7px;
+              
+            &:first-child {
+                width: 100%;
+                transform: translate(0%, 20px) rotate(-45deg);
+            }
+              
+            &:nth-child(2) {
+                width: 0%;
+            }
+              
+            &:last-child {
+                width: 100%;
+                transform: translate(0%, -20px) rotate(45deg);
+            }
+        }
     }
 
     &__logo{
@@ -39,67 +72,116 @@
         height: 30px;
         cursor: pointer;
         transition: all 0.3s ease-in;
-        user-select: none
-    }
-
-    &__list {
-        display: none;
-        
-     }
-
-@media (min-width:980px) {
-
-    &__logo{
-        width: 25%;
-        width: auto;
-        height: 40px;
-        left: 0;
-        margin: 0px;
-        margin-left: 20px;
-        
-    }
-
-    &__account {
-        margin-right: 50px;
-        transition: all 0.3s ease-in;
-
-    }
-    
-    &__basket {
-        margin-right: 30px;
-        transition: all 0.3s ease-in;
-        margin-left: 5%;
-    }
-    
-    &__menu {
-        height: auto;
-        width: auto;
-        display: flex;
-        line-height: 10em;
-        
-        
-    }
-
-    &__list {
-        margin-left: 20vw;
-        display: flex;
-        align-items: center;  
-        justify-content: center;  
-       
-   
-    }
-    &__text { 
-
-        
-        width: 10rem;;
-        font-size: 1.0em;
-        text-transform: uppercase;
-        cursor: pointer;
         user-select: none;
-        margin: 0 30px;
-        transition: all 0.3s ease-in;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-}
 
+    &__list.is-active {
+        margin-top: 30px;
+    }
+
+    @media (max-width:980px) {
+        &__account {
+            display: none;
+        }
+
+        &__basket {
+            display: none;
+        }
+        
+        &__list {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            height: 50%;
+            width: 100%;
+            border: solid;
+            margin-top: -125%;
+
+            transition: margin-top 0.5s;
+        }
+    }
+
+    @media (min-width:980px) {
+
+        &__account {
+            position: absolute;
+            right: 35px;
+            width: 25px;
+            height: 25px;
+            padding-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+            user-select: none
+        }
+
+        &__basket {
+            position: absolute;
+            right: 0;
+            width: 33px;
+            height: 33px;
+            padding-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+            user-select: none;
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__logo{
+            width: 25%;
+            width: auto;
+            height: 40px;
+            left: 0;
+            margin: 0px;
+            margin-left: 20px;
+            
+        }
+
+        &__account {
+            margin-right: 50px;
+            transition: all 0.3s ease-in;
+
+        }
+        
+        &__basket {
+            margin-right: 30px;
+            transition: all 0.3s ease-in;
+            margin-left: 5%;
+        }
+        
+        &__menu {
+            height: auto;
+            width: auto;
+            display: flex;
+            line-height: 10em;
+            
+            
+        }
+
+        &__list {
+            margin-left: 20vw;
+            display: flex;
+            align-items: center;  
+            justify-content: center;  
+        
+    
+        }
+        &__text { 
+
+            
+            width: 10rem;;
+            font-size: 1.0em;
+            text-transform: uppercase;
+            cursor: pointer;
+            user-select: none;
+            margin: 0 30px;
+            transition: all 0.3s ease-in;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
 }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../scss/styles.scss">
     <link rel="stylesheet" href="https://use.typekit.net/zqf2idl.css%22%3E">
+    <script defer src='../js/index.js'></script>
+    <script defer src='../js/header.js'></script>
     <title>LaSocquette</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
         <nav class="nav">
 
             <div class="nav__menu">
-                <ul class="nav__list">
+                <ul id="menu" class="nav__list">
                     <li class="nav__text">Personnalisation</li class="nav__text">
                     <li class="nav__text">Nos chaussettes</li>
                     <li class="nav__text">Nos engagements</li>
@@ -24,6 +26,13 @@
             <img class="nav__account" src="../assets/account.svg" alt="account">
             <img class="nav__basket" src="../assets/basket.svg" alt="basket">
             <img class="nav__logo" src="../assets/La socquette.svg" alt="logo">
+
+            <div id="burger" class="nav__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </nav>
     </header>
    <main>
