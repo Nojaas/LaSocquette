@@ -5,12 +5,14 @@ header {
     display: flex;
     justify-content: center;
 
+
     .nav {
         width: 97%;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
 
 
         &__icons {
@@ -52,6 +54,7 @@ header {
 
 @media(min-width: 980px) { 
     
+
     header {
 
     
@@ -92,6 +95,7 @@ header {
                 font-style: normal;
             }
         }
+
     }
 }
 
