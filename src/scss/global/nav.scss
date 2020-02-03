@@ -1,101 +1,98 @@
 @mixin flex-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    z-index: 1;
-    @include flex-center;
-    justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  z-index: 1;
+  @include flex-center;
+  justify-content: center;
 }
 
 .nav__account {
-    position: absolute;
-    right: 35px;
-    width: 25px;
-    height: 25px;
-    padding-right: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    user-select: none
+  position: absolute;
+  right: 35px;
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  user-select: none;
 }
 
 .nav__basket {
-    position: absolute;
-    right: 0;
-    width: 33px;
-    height: 33px;
-    padding-right: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    user-select: none
+  position: absolute;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  user-select: none;
 }
 
-.nav__logo{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    width: auto;
-    height: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    user-select: none
+.nav__logo {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: auto;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  user-select: none;
 }
 
 .nav__menu {
-    display: none;
+  display: none;
 }
 
-@media (min-width:980px) {
+@media (min-width: 980px) {
+  .nav__logo {
+    width: 25%;
+    width: auto;
+    height: 40px;
+    left: 0;
+    margin: 0px;
+    padding-left: 20px;
+  }
 
-    .nav__logo{
-        width: 25%;
-        width: auto;
-        height: 40px;
-        left: 0;
-        margin: 0px;
-        padding-left: 20px;
-        
-    }
+  .nav__account {
+    padding-right: 30px;
+    transition: all 0.3s ease-in;
+  }
 
-    .nav__account {
-        padding-right: 30px;
-        transition: all 0.3s ease-in;
+  .nav__basket {
+    padding-right: 30px;
+    transition: all 0.3s ease-in;
+  }
 
-    }
-    
-    .nav__basket {
-        padding-right: 30px;
-        transition: all 0.3s ease-in;
-    }
-    
-    .nav__menu {
-        position: absolute;
-        @include flex-center;
-        height: auto;
-        width: auto;
-        align-items: center;
-        user-select: none
-    }
+  .nav__menu {
+    position: absolute;
+    @include flex-center;
+    height: auto;
+    width: auto;
+    align-items: center;
+    user-select: none;
+  }
 
-    .nav__text {
-        display: inline-block;
-        font-size: 22px;
-        cursor: pointer;
-        user-select: none;
-        margin: 0 50px;
-        transition: all 0.3s ease-in;
-    }
+  .nav__text {
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 50px;
+    transition: all 0.3s ease-in;
+  }
 }
 
-@media (max-width:1290px) {
-    .nav__text {
-        margin: 0 15px;
-        transition: all 0.3s ease-in;
-        font-size: 18px;
-    }
+@media (max-width: 1290px) {
+  .nav__text {
+    margin: 0 15px;
+    transition: all 0.3s ease-in;
+    font-size: 18px;
+  }
 }
