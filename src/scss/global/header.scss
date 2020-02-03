@@ -94,6 +94,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+            
 
             height: 50%;
             width: 100%;
@@ -168,6 +169,7 @@
             display: flex;
             align-items: center;  
             justify-content: center;  
+         
         
     
         }
@@ -182,6 +184,13 @@
             margin: 0 30px;
             transition: all 0.3s ease-in;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
         }
+
+        &__a {
+            text-decoration: none;
+            color: black;
+        }
+               
     }
 }
