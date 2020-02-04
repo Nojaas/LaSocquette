@@ -35,6 +35,9 @@
       font-weight: 400;
       font-style: normal;
     }
+    & h3 {
+      display: none;
+    }
   }
   &__chaussettes {
     height: 320px;
@@ -74,6 +77,10 @@
       width: 505px;
       height: 505px;
       margin-left: 80px;
+
+      & h3 {
+        display: block;
+      }
     }
   }
 }
