@@ -5,6 +5,9 @@
   padding-top: 60px;
   background-color: #dce5f2;
   height: 100vh;
+  position: relative;
+  z-index: -1;
+
 
   &__motif {
     width: auto;
