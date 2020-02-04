@@ -25,32 +25,22 @@ body {
       display: flex;
       width: 50%;
       height: 80%;
+      
+      h1 {
+        font-family: alternate-gothic-no-2-d,sans-serif;
+        background-color: yellow;
+      }
 
       &__border {
 
-        &__color {
-          width: 50%;
-          display: flex;
-          justify-content:space-around ;
-        }
       }
 
       &__sock {
 
-        &__color {
-          width: 50%;
-          display: flex;
-          justify-content:space-around ;
-        }
       }
 
       &__logo {
 
-        &__color {
-          width: 50%;
-          display: flex;
-          justify-content:space-around ;
-        }
       }
 
       
@@ -63,6 +53,7 @@ svg.color {
   height: 15px;
 }
 
-h1 {
-  font-family: alternate-gothic-no-2-d,sans-serif;
+svg.arrow {
+  width: 60px;
+  height: 30px;
 }
