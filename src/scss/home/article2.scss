@@ -10,7 +10,12 @@
     height: auto;
     margin: 40px;
   }
-  &__chaussettes {
+  &__svg {
+    position: absolute;
+  }
+
+  &__svg2 {
+    position: absolute;
   }
 
   &__sockrecycle {
@@ -69,7 +74,7 @@
       height: 509px;
     }
     &__chaussettes {
-      width: 509px;
+      width: 70vh;
       height: 509px;
       margin: 64px 40px;
     }
