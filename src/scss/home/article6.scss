@@ -2,34 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #dce5f2;
-  height: 523px;
-  &__personnalisation {
-    background-color: #dce5f2;
-    width: 100%;
-    height: auto;
-    margin: 40px;
-  }
+  height: 100px;
+  width: auto;
+
   &__chaussettes {
     background-color: white;
     justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
   }
 
-  &__sockrecycle {
-    height: 250px;
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #6a6a6a;
-  }
-
-  &__participate {
+  &__histoire {
     font-size: 30px;
     font-family: alternate-gothic-no-2-d, sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin: auto 12%;
+    margin: 40px;
   }
 
   &__texte6 {
@@ -51,7 +40,7 @@
 }
 
 @media (min-width: 980px) {
-  // code pour article 6
+  // code pour article 6 desktop
   .article6 {
     display: flex;
 
