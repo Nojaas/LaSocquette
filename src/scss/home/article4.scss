@@ -62,17 +62,82 @@
       width: auto;
     }
 
-   &__prix1 {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
+   
+  
+  }
+
+  &__prix1  {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    
+    & h1 {
+      padding: 10px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+    & h2 {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      color: #747474;
+      font-family: "Roboto", sans-serif;
+    }
    }
-   &__prix2 {
+
+
+
+  &__produit2 {
+    padding-top: 230px;
+  }
+
+  &__background2 {
+    background-color:#dce5f2;
+    width: 380px;
+    height: 320px;
+    padding-top: 15px;
+   
+  }
+
+  &__chaussettes2 {
+    height: 60px;
+    width: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    
+    &__sock2 {
+      height: 370px;
+      width: auto;
+      position: absolute;
+      padding-right: 5px;
+      padding-top: 8px;
+    }
   }
-  }
+
+  &__prix2  {
+    height: auto;
+    width: auto;
+    padding-top: 110px;
+    
+    & h1 {
+      padding: 10px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+    & h2 {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      color: #747474;
+      font-family: "Roboto", sans-serif;
+    }
+   }
 }
+
