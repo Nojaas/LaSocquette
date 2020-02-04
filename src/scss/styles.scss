@@ -1,6 +1,5 @@
 @import "vendors/reset";
 
-
 @import "global/footer";
 @import "global/header";
 
@@ -9,6 +8,11 @@
 @import "utilities/typo";
 @import "utilities/variables";
 
-@import "pages/home.scss"
+@import "home/home.scss";
 
-
+@import "home/article1";
+@import "home/article2";
+@import "home/article3";
+@import "home/article4";
+@import "home/article5";
+@import "home/article6";

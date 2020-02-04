@@ -1,0 +1,111 @@
+body {
+  background-color: white;
+}
+
+.article2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 523px;
+  &__personnalisation {
+    background-color: #dce5f2;
+    width: 100%;
+    height: auto;
+    margin: 40px;
+  }
+  &__chaussettes {
+  }
+
+  &__sockrecycle {
+    height: 250px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #6a6a6a;
+  }
+
+  &__participate {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: auto 12%;
+  }
+
+  &__aideznous {
+    margin: 12% 12%;
+    font-size: 26px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  &__texte1 {
+    margin: 12% 12%;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: grey;
+  }
+
+  &__bouton {
+    width: 210px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin: 12% 11%;
+  }
+}
+
+@media (min-width: 980px) {
+  // code pour article 3
+
+  .article3 {
+    display: flex;
+    flex: auto;
+    margin: 64px 40px;
+    background-color: red;
+    height: 379px;
+
+    &__personnalisation {
+      color: white;
+    }
+  }
+
+  /* code pour article 4 a faire
+
+.article4 {
+  display: flex;
+ 
+  align-items: center;
+  margin: 30px;
+  height: 815px;
+  
+
+  &__titre {
+    color: red;
+  }
+
+  &__sockvitrine {
+    flex: 1;
+  }
+
+  &__exoticsock {
+    
+    background-color: lightblue;
+    height: 696px;
+    width: 387px;
+   
+  
+  &__basicsock {
+   
+    background-color: darkblue;
+    height: 696px;
+    width: 387px;
+    margin-left: 696px;
+    
+    }
+}
+}
+*/
+}
