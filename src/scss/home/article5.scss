@@ -1,0 +1,60 @@
+.article5 {
+    position: relative;
+    display: flex;
+    height: 100vh;
+
+
+    &__img {
+        width: 100vw;
+        height: 100vh; 
+        object-fit: cover;
+        object-position: bottom right;
+        overflow: hidden;
+        position: relative;
+
+        
+    }
+
+
+    .forceh1 {
+        position: absolute;
+        top: 0;
+        bottom: 170px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        height: 200px;
+        z-index: 1;
+        
+        &__title {
+            color: black;
+            font-family: alternate-gothic-no-2-d,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: 75px;
+        }
+
+    }
+    .force {
+        position: absolute;
+        top: 230px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        height: 200px;
+        z-index: 1;
+
+        
+        
+        &__text {
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            
+        }
+    }
+}
