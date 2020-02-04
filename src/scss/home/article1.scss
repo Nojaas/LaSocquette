@@ -1,0 +1,36 @@
+.article1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  background-color: #dce5f2;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: -1;
+
+  &__motif {
+    width: auto;
+    height: 90px;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__title {
+    position: absolute;
+    background-color: white;
+    height: 180px;
+    width: 280px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 54px;
+    font-family: alternate-gothic-no-2-d, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
