@@ -8,6 +8,7 @@
   position: relative;
   z-index: -1;
 
+
   &__motif {
     width: auto;
     height: 90px;
@@ -53,6 +54,26 @@
     &__contour {
       height: 100%;
       width: auto;
+    }
+  }
+}
+
+@media (min-width: 980px) {
+  .article1 {
+    display: flex;
+    justify-content: start;
+    height: 615px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    &__motif {
+      width: 435px;
+      height: 615px;
+    }
+    &__title {
+      width: 505px;
+      height: 505px;
+      margin-left: 80px;
     }
   }
 }
