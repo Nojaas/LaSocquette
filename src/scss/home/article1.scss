@@ -5,7 +5,7 @@
   padding-top: 60px;
   background-color: #dce5f2;
   height: 100vh;
-  width: auto;
+  width: 100vw;
   position: relative;
   z-index: -1;
 
@@ -28,9 +28,32 @@
     display: flex;
     align-items: center;
     padding-left: 20px;
-    font-size: 54px;
-    font-family: alternate-gothic-no-2-d, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+    & h1 {
+      font-size: 54px;
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+  &__chaussettes {
+    height: 320px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    &__sock {
+      height: 300px;
+      width: auto;
+      position: absolute;
+      padding-right: 5px;
+      padding-top: 8px;
+    }
+    &__contour {
+      height: 100%;
+      width: auto;
+    }
   }
 }
