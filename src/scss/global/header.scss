@@ -133,6 +133,10 @@ header {
                 font-style: normal;
                 
                 } 
+            & a {
+            text-decoration: none;
+            color: black;
+            }
             }
         }  
     }
@@ -163,6 +167,11 @@ header {
             font-weight: 400;
             font-style: normal;
             text-decoration: none;
+        }
+
+        & a {
+            text-decoration: none;
+            color: black;
         }
     }
 }
