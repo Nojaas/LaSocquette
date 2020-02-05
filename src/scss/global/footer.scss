@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   height: 130vh;
-  padding-top: 200px;
+  padding-top: 64px;
   flex-direction: column;
 
   &__global {
@@ -47,7 +47,58 @@
       font-family: "Roboto", sans-serif;
     }
 
+    & h2 {
+      position: absolute;
+      color: white;
+      margin-top: 120px;
+      margin-left: -180px;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    & h3 {
+      color: white;
+      position: absolute;
+      margin-top: 565px;
+      margin-left: -170px;
+      font-family: "Roboto", sans-serif;
+    }
+    
+  
    }
+
+   &__email {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -200px;
+    
+    & input {
+      width: 350px;;
+      height: 50px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      
+    }
+    
+    
+  }
+
+  &__btn {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #222222;
+    width: 140px;
+    height: 60px;
+    margin-top: 290px;
+    margin-left: -90px;
+
+    & a {
+      color: white;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+    }
+  }
 
     
 
@@ -79,6 +130,19 @@
     }
 
     
+
+    
+  }
+  &__svg1 {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: -130px;
+  }
+
+  &__svg2 {
+    position: absolute;
+    margin-top: 490px;
+    margin-left: -126px;
   }
 }
 
