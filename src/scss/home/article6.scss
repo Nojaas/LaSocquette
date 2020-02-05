@@ -1,74 +1,112 @@
 .article6 {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #dce5f2;
-  height: 100px;
-  width: auto;
+  height: 490px;
+  position: relative;
+  z-index: -1;
 
-  &__chaussettes {
-    background-color: white;
-    justify-content: center;
+  &__motif {
+    width: auto;
+    height: 200px;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  
+  &__button {
     height: auto;
-    width: 100%;
-    margin-top: 40px;
+    width: auto;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+
+    & button {
+      background-color: black;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      border: none;
+      margin: 20px;
+      padding: 12px 20px;
+    }
   }
 
-  &__histoire {
-    font-size: 30px;
-    font-family: alternate-gothic-no-2-d, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 40px;
-  }
+  &__title {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    padding-left: 10px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
 
-  &__texte6 {
-    margin: 12% 12%;
-    font-size: 22px;
-    color: grey;
-    font-family: "Roboto", sans-serif;
-  }
+    & h1 {
+      font-size: 54px;
+      margin-top: 30px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      font-weight: 400;
+      font-style: normal;
 
-  &__bouton {
-    width: 210px;
-    height: 50px;
-    background-color: black;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-    margin: 12% 11%;
+    }
+
+    & p {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+      color: #7A7A7A;
+    }
   }
 }
-
 @media (min-width: 980px) {
-  // code pour article 6 desktop
   .article6 {
     display: flex;
+    justify-content: start;
+    height: 500px;
+    margin: 64px;
 
-    margin: 64px 0px;
-    background-color: white;
-    height: 523px;
-
-    &__chaussettes {
-      width: 509px;
-      height: 509px;
-      margin: 64px 40px;
+    &__motif {
+      
+      width: 50%;
+      height: 500px;
     }
 
-    &__participate {
-      width: 500px;
-      font-size: 50px;
-    }
+    &__button {
 
-    &__texte6 {
+      & button {
+        
+      }
+    }
+  
+    &__title {
       width: 500px;
-      height: 100%;
-      font-size: 54px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      color: #6a6a6a;
-      font-size: 48px;
+      height: 400px;
+      margin-left: 20%;
+
+      & h1 {
+        font-size: 75px;
+        margin-left: 20px;
+      }
+
+      & p {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 20px;
+
+        
+        
+      }
     }
   }
 }
