@@ -21,13 +21,18 @@
   &__title {
     position: absolute;
     background-color: white;
-    text-transform: uppercase;
     height: 180px;
     width: 280px;
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     padding-left: 20px;
+
+    &__crayon {
+      position: absolute;
+      top: 140px;
+      right: 15px;
+    }
 
     & h1 {
       font-size: 54px;
@@ -58,6 +63,30 @@
     &__contour {
       height: 100%;
       width: auto;
+    }
+  }
+  &__bouton {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    border: 2px red solid;
+    display: flex;
+
+    &__click {
+      position: absolute;
+    }
+
+    & button {
+      background-color: black;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding: 12px 20px;
     }
   }
 }
