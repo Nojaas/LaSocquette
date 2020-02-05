@@ -45,10 +45,31 @@ body {
 
       
     }
+    
+    &__socks {
+      position: absolute;
+      top: 10%;
+      right: 30%;
+
+      &__color {
+        position: absolute;
+        z-index: 1;
+      }
+
+      &__logo {
+        position: absolute;
+        z-index: 2;
+      }
+
+      &__border {
+        position: absolute;
+        z-index: 3;
+      }
+    }
   }
 }
 
-svg.color {
+svg.button {
   width: 15px;
   height: 15px;
 }
