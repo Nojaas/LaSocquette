@@ -4,6 +4,8 @@
   background-color: white;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
+  
 
   &__background {
     background-color: #dce5f2;
@@ -19,6 +21,7 @@
     height: 180px;
     width: 320px;
     display: flex;
+    padding-top: 64px;
 
     & h1 {
       font-size: 54px;
@@ -86,6 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 
     &__sock2 {
       height: 340px;
@@ -131,6 +135,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin-bottom: 30px;
     }
 
     &__produit2 {
@@ -194,7 +199,7 @@
       width: 1020px;
       display: flex;
       justify-content: center;
-      padding-top: 60px;
+      padding-top: 10px;
 
       & h1 {
         font-size: 64px;
