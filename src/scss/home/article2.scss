@@ -1,14 +1,16 @@
 .article2 {
   display: flex;
+  justify-content: center;
+  align-items: start;
   flex-wrap: wrap;
   background-color: white;
-  min-height: 920px;
+  min-height: 600px;
+  margin-bottom: 12px;
 
   &__planete {
     background-color: #dce5f2;
-    width: 100%;
+    width: auto;
     height: auto;
-    margin: 40px;
   }
   &__svg {
     position: absolute;
@@ -19,13 +21,32 @@
   }
 
   &__sockrecycle {
-    height: 250px;
-    font-size: 42px;
+    padding-left: 15px;
+    padding-right: 60px;
+    height: 220px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: alternate-gothic-no-2-d, sans-serif;
-    color: #6a6a6a;
+    flex-direction: column;
+    line-height: 250%;
+
+    &__date {
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      font-weight: lighter;
+      font-style: normal;
+      font-size: 36px;
+      color: black;
+      text-transform: uppercase;
+      line-height: 100%;
+    }
+    &__chiffre {
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      font-weight: lighter;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 44px;
+      color: #6a6a6a;
+      line-height: 150%;
+    }
   }
 
   &__participate {
@@ -53,7 +74,6 @@
     height: auto;
     width: fit-content;
     display: flex;
-    margin: 0px 12%;
     cursor: pointer;
 
     & button {
@@ -61,7 +81,7 @@
       color: white;
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 18px;
       border: none;
       padding: 12px 20px;
     }
@@ -72,6 +92,7 @@
   // code pour article 2
   .article2 {
     display: flex;
+    justify-content: start;
     align-items: center;
     width: 90vw;
     margin-bottom: 60px;
@@ -82,7 +103,6 @@
       background-color: #dce5f2;
       width: 509px;
       height: 509px;
-      margin: 0px;
     }
     &__chaussettes {
       width: 70vh;
@@ -117,11 +137,15 @@
       font-size: 54px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      color: #6a6a6a;
+      padding-left: 35px;
 
-      font-size: 48px;
+      &__date {
+        font-size: 46px;
+      }
+
+      &__chiffre {
+        font-size: 56px;
+      }
     }
   }
 }

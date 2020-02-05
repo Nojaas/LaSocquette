@@ -7,6 +7,7 @@
   height: 100vh;
   position: relative;
   z-index: -1;
+  margin-bottom: 40px;
 
   &__motif {
     width: auto;
@@ -31,7 +32,7 @@
     &__crayon {
       position: absolute;
       top: 140px;
-      right: 15px;
+      right: 5px;
     }
 
     & h1 {
@@ -71,20 +72,15 @@
     height: auto;
     position: absolute;
     bottom: 50px;
-    border: 2px red solid;
     display: flex;
     cursor: pointer;
-
-    &__click {
-      position: absolute;
-    }
 
     & button {
       background-color: black;
       color: white;
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 18px;
       border: none;
       width: 100%;
       height: 100%;

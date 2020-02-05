@@ -57,11 +57,10 @@
       height: 500px;
       object-fit: cover;
       object-position: bottom;
-      overflow: hidden;
     }
 
     .promo {
-      right: 52%;
+      right: 54%;
       top: 100px;
 
       &__title {
@@ -72,7 +71,7 @@
       }
 
       &__text {
-        font-size: 42px;
+        font-size: 36px;
         & span {
           height: 0;
         }
