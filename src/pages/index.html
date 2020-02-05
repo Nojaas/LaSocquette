@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
+      <nav class="nav" >
         <svg
           class="nav__logo"
           width="151"
@@ -27,16 +27,20 @@
             fill="black"
           />
         </svg>
-
-        <div class="nav__menu">
-          <ul id="menu">
+        
+        <div class="menu">
+          <ul>
             <li><a href="personnalisation.html">personnalisation</a></li>
-            <li>Nos chaussettes</li>
-            <li>Nos engagements</li>
-            <li>Notre histoire</li>
+            <li><a href="#">Nos chaussettes</a></li>
+            <li><a href="#">Nos engagements</a></li>
+            <li><a href="#">Notre histoire</a></li>
           </ul>
         </div>
-
+        <div id="burger" class="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="nav__icons">
           <svg
             class="nav__account"
@@ -78,15 +82,17 @@
             />
           </svg>
         </div>
-
-        <div id="burger" class="nav__burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
     </header>
   <main>
+      <div id="nav" class="menu_mobile">
+        <ul>
+          <li><a href="personnalisation.html">Personnalisation</a></li>
+          <li><a href="#">Nos chaussettes</a></li>
+          <li><a href="#">Nos engagements</a></li>
+          <li><a href="#">Notre histoire</a></li>
+        </ul>
+      </div>
       <!-- Code pour article 1-->
       <section class="article1">
         <div class="article1__motif">
