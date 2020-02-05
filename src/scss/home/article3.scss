@@ -1,95 +1,82 @@
 .article3 {
-	position: relative;
-	display: flex;
-	height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
+  &__img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom right;
+    overflow: hidden;
+    position: relative;
+  }
 
-	&__img {
-		width: 100vw;
-		height: 100vh;
-		object-fit: cover;
-		object-position: bottom right;
-		overflow: hidden;
-		position: relative;
-	}
+  .promo {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    height: 80px;
+    z-index: 0;
 
-	.promo {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-		text-align: center;
-		height: 80px;
-		z-index: 0;
+    &__title {
+      color: white;
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 64px;
 
-		&__title {
-			color: white;
-			font-family: alternate-gothic-no-2-d,sans-serif;
-			font-weight: 400;
-			font-style: normal;
-			text-transform: uppercase;
-			font-size: 64px;
+      & span {
+        background-color: black;
+        height: 55px;
+        display: inline-block;
+      }
+    }
 
-			& span {
-				background-color: black;
-				height: 55px;
-				display:inline-block
-			}
-		}
-
-		&__text {
-			color: white;
-			font-family: 'Roboto', sans-serif;
-			font-size: 16px;
-			& span {
-				background-color: black;
-				display:inline-block
-			}
-		}
-
-		&__text2 {
-			display: none;
-		}
-	}
+    &__text {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      & span {
+        background-color: black;
+        display: inline-block;
+      }
+    }
+  }
 }
 
-@media (min-width:980px) {
-	
-	.article3 {
-		
-		&__img {
-			height: 500px;
-			object-fit: cover;
-			object-position: bottom;
-			overflow: hidden;
-		}
+@media (min-width: 980px) {
+  .article3 {
+    height: auto;
+    width: 90vw;
+    margin-bottom: 60px;
+    &__img {
+      height: 500px;
+      object-fit: cover;
+      object-position: bottom;
+      overflow: hidden;
+    }
 
-		.promo {
-			right: 650px;
-			bottom: 500px;
+    .promo {
+      right: 52%;
+      top: 100px;
 
-			&__title {
-				font-size: 74px;
-				& span {
-					height: 0;
-				}
-			}
+      &__title {
+        font-size: 88px;
+        & span {
+          height: 0;
+        }
+      }
 
-			&__text {
-				font-size: 45px;
-				& span {
-					height: 0;
-				}
-			}
-
-			&__text2 {
-				margin-top: 20px;
-				color: white;
-				font-family: 'Roboto', sans-serif;
-				font-size: 20px;
-			}
-		}
-	}
+      &__text {
+        font-size: 42px;
+        & span {
+          height: 0;
+        }
+      }
+    }
+  }
 }
