@@ -22,10 +22,27 @@
     height: 250px;
     font-size: 42px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: alternate-gothic-no-2-d, sans-serif;
     color: #6a6a6a;
+    margin-top: 30px;
+
+    & h1 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 40px;
+      color: black;
+    }
+    & h2 {
+      color: #6a6a6a;
+      font-size: 54px;
+    }
+    
   }
 
   &__participate {
@@ -94,14 +111,29 @@
 
     &__sockrecycle {
       height: 100%;
-      font-size: 54px;
+      
+      width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      color: #6a6a6a;
+      flex-direction: column;
+      margin-top: 0;
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      color: black;
 
-      font-size: 48px;
+      & h1 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 50px;
+      }
+      & h2 {
+        color: #6a6a6a;
+        font-size: 64px;
+      }
+      
     }
+
+   
   }
 }

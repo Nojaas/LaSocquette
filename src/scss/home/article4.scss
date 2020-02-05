@@ -147,6 +147,21 @@
         font-family: "Roboto", sans-serif;
       }
      }
+
+     
+     &__svg {
+      position: absolute;
+      margin-top: 190px;
+      margin-left: -130px;
+
+    }
+    &__svg2 {
+      position: absolute;
+      margin-top: -150px;
+      margin-left: 170px;
+      
+    }
+    
   }
   
 
@@ -252,6 +267,9 @@
          
         }
     
+    } 
+    
+    
     }
   }
-  }
+  
