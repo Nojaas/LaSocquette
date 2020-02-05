@@ -41,6 +41,7 @@
       font-style: normal;
     }
     & h3 {
+      font-family: "Roboto", sans-serif;
       display: none;
     }
   }
@@ -72,6 +73,7 @@
     bottom: 50px;
     border: 2px red solid;
     display: flex;
+    cursor: pointer;
 
     &__click {
       position: absolute;
@@ -96,8 +98,8 @@
     display: flex;
     justify-content: start;
     height: 615px;
-    margin-left: 60px;
-    margin-right: 60px;
+    width: 90vw;
+    margin-bottom: 60px;
 
     &__motif {
       width: 435px;
@@ -106,10 +108,18 @@
     &__title {
       width: 505px;
       height: 505px;
-      margin-left: 80px;
+      margin: 80px;
 
-      & h3 {
-        display: block;
+      &__texte {
+        border: 2px solid red;
+
+        & h1 {
+          font-size: 75px;
+        }
+        & h3 {
+          display: block;
+          font-size: 18px;
+        }
       }
     }
   }
