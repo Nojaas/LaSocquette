@@ -67,6 +67,9 @@
       width: auto;
     }
   }
+  &__chaussettes2 {
+    display: none;
+  }
   &__bouton {
     width: auto;
     height: auto;
@@ -104,19 +107,40 @@
     &__title {
       width: 505px;
       height: 505px;
-      margin: 80px;
+      margin: 50px 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &__texte {
         border: 2px solid red;
+        height: 350px;
+        width: 450px;
 
         & h1 {
           font-size: 75px;
         }
         & h3 {
           display: block;
-          font-size: 18px;
+          font-size: 16px;
+          width: 90%;
+          color: #7a7a7a;
+          line-height: 130%;
         }
       }
+    }
+    &__chaussettes {
+      height: 330px;
+      position: relative;
+      margin-top: 10%;
+      margin-left: 40%;
+
+      &__sock {
+        height: 310px;
+      }
+    }
+    &__chaussettes {
+      display: flex;
     }
   }
 }
