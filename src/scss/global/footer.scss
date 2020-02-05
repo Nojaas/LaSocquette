@@ -1,0 +1,92 @@
+.footer {
+  position: relative;
+  display: flex;
+  height: 130vh;
+  padding-top: 200px;
+  flex-direction: column;
+
+  &__global {
+    position: relative;
+    display: flex;
+    height: 100vh;
+  }
+
+  &__img {
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 160vh;
+    background-color: #222222;
+
+  }
+
+    &__svg {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+       
+  }
+
+   &__madein {
+
+    & h1 {
+      position: absolute;
+      color: white;
+      margin-top: 70px;
+      margin-left: -88px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+    }
+
+   }
+
+    
+
+
+  &__title {
+    position: absolute;
+    
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    
+    z-index: 0;
+   
+     & h1 {
+      color: black;
+      font-family: alternate-gothic-no-2-d,sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 38px;
+      
+      & span {
+        background-color: white;
+        display: inline-block;
+        height: 35px;
+        width: 250px;
+      }
+    }
+
+    
+  }
+}
+
+@media (min-width:980px) {
+
+  .footer {   
+    height: 90vh;        
+}
+
+
+}
