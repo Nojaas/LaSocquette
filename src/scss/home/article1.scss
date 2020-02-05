@@ -46,30 +46,33 @@
       display: none;
     }
   }
-  &__chaussettes {
-    height: 300px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    margin-top: 30px;
+  &__deco {
+    &__chaussettes {
+      height: 300px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      margin-top: 30px;
 
-    &__sock {
-      height: 280px;
-      width: auto;
-      position: absolute;
-      padding-right: 5px;
-      padding-top: 8px;
+      &__sock {
+        height: 280px;
+        width: auto;
+        position: absolute;
+        padding-right: 5px;
+        padding-top: 8px;
+      }
+      &__contour {
+        height: 100%;
+        width: auto;
+      }
     }
-    &__contour {
-      height: 100%;
-      width: auto;
+    &__chaussettes2 {
+      display: none;
     }
   }
-  &__chaussettes2 {
-    display: none;
-  }
+
   &__bouton {
     width: auto;
     height: auto;
@@ -112,13 +115,16 @@
       justify-content: center;
       align-items: center;
 
+      &__crayon {
+        top: 180px;
+      }
+
       &__texte {
-        border: 2px solid red;
         height: 350px;
         width: 450px;
-
         & h1 {
           font-size: 75px;
+          margin-bottom: 2%;
         }
         & h3 {
           display: block;
@@ -129,18 +135,52 @@
         }
       }
     }
-    &__chaussettes {
-      height: 330px;
-      position: relative;
-      margin-top: 10%;
-      margin-left: 40%;
+    &__deco {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 25%;
+      margin-top: 8%;
+      width: 30%;
+      height: 60%;
+      &__chaussettes {
+        height: 350px;
+        position: relative;
+        margin: 0;
+        transform: rotate(180deg);
+        padding-top: 15px;
 
-      &__sock {
-        height: 310px;
+        &__sock {
+          height: 330px;
+        }
+      }
+      &__chaussettes2 {
+        display: block;
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 350px;
+        position: relative;
+        padding-top: 15px;
+
+        &__sock2 {
+          width: auto;
+          position: absolute;
+          padding-right: 5px;
+          padding-top: 8px;
+          height: 330px;
+        }
+
+        &__contour2 {
+          height: 100%;
+          width: auto;
+        }
       }
     }
-    &__chaussettes {
-      display: flex;
+    &__bouton {
+      bottom: 130px;
+      left: 125px;
     }
   }
 }
