@@ -149,9 +149,105 @@
 
 @media (min-width:980px) {
 
-  .footer {   
-    height: 90vh;        
+.footer {
+  position: relative;
+  display: flex;
+  height: 600px;
+  padding-top: 64px;
+  flex-direction: column;
+
+  &__global {
+    position: relative;
+    display: flex;
+    height: 300px;
+  }
+  &__info {
+   position: relative;
+    width: 100vw;
+    height: 300px;
+    background-color: #222222;
+
+  }
+
+  &__img {
+    height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  &__svg {
+    
+    margin-top: 0px;
+    opacity: 0;
+     
+}
+
+  &__email {
+    
+    margin-top: 120px;
+    margin-left: -220px;
+    
+    & input {
+      width: 400px;;
+      height: 54px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      
+    } 
+  }
+
+  &__madein {
+
+    & h1 {
+      opacity: 0;
+    }
+
+    & h2 {
+      position: absolute;
+      color: white;
+      margin-top: 80px;
+      margin-left: -220px;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    & h3 {
+      
+      margin-top: 265px;
+      margin-left: 26%;
+     
+      font-size: 14px;
+    }
+
+}
+
+&__btn {
+ 
+  width: 220px;
+  height: 60px;
+  margin-top: 120px;
+  margin-left: 210px;
+
+  & a {
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+&__svg1 {
+  
+  margin-top: 30px;
+  margin-left: -50%;
+}
+
+&__svg2 {
+  
+  margin-top: 240px;
+  margin-left: -50%;
+}
+}
 }
 
 
-}
