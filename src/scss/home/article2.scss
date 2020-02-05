@@ -12,12 +12,13 @@
     width: auto;
     height: auto;
   }
-  &__svg {
-    position: absolute;
-  }
 
-  &__svg2 {
-    position: absolute;
+  &__chaussettes {
+    display: flex;
+    flex-direction: column;
+  }
+  &__chaussettes:nth-child(4n) {
+    align-items: center;
   }
 
   &__sockrecycle {
@@ -73,8 +74,8 @@
   &__bouton {
     height: auto;
     width: fit-content;
-    display: flex;
     cursor: pointer;
+    margin-left: 25%;
 
     & button {
       background-color: black;
@@ -111,19 +112,20 @@
 
     &__participate {
       width: 500px;
-      font-size: 56px;
+      font-size: 75px;
       margin: 0px;
       margin-bottom: 20px;
     }
 
     &__aideznous {
-      font-size: 50px;
+      font-size: 46px;
       margin: 0px;
       margin-bottom: 20px;
     }
 
     &__texte1 {
       width: 500px;
+      font-size: 16px;
       margin: 0px;
       margin-bottom: 25px;
     }
