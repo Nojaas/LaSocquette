@@ -92,7 +92,6 @@ header {
 
 
       &__logo {
-          height: 45px;
           transition: ease 0.5s;
       }
 
@@ -111,31 +110,33 @@ header {
       }
 
       
-        .menu {
-            display: flex;
-            align-items: center;  
-            justify-content: center;  
-            & ul {
+            .menu {
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-    
-            & li { 
+                align-items: center;  
+                justify-content: center;  
+                & ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                & li { 
 
-                font-size: 20px;
-                text-transform: uppercase;
-                cursor: pointer;
-                user-select: none;
-                margin: 0 30px;
-                color: black;
-                font-family: alternate-gothic-no-2-d, sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                
-                } 
-            }
-        }  
-    }
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    user-select: none;
+                    margin: 0 30px;
+                    color: black;
+                    font-family: alternate-gothic-no-2-d, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }  
+    }   }
   }
 }
 
@@ -162,6 +163,11 @@ header {
             font-family: alternate-gothic-no-2-d, sans-serif;
             font-weight: 400;
             font-style: normal;
+            text-decoration: none;
+        }
+
+        & a {
+            color: black;
             text-decoration: none;
         }
     }
