@@ -8,22 +8,21 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    object-position: bottom right;
+    object-position: 80% 25%;
     overflow: hidden;
     position: relative;
   }
 
-  .forceh1 {
+  .force {
     position: absolute;
     top: 0;
     bottom: 170px;
     left: 40px;
     right: 0;
     margin: auto;
-    text-align: center;
     height: 200px;
     z-index: 0;
-    width: 50%;
+    width: 80%;
 
     &__title {
       color: black;
@@ -34,20 +33,10 @@
       font-size: 75px;
       text-align: left;
     }
-  }
-  .force {
-    position: absolute;
-    top: 230px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: left;
-    height: 200px;
-    z-index: 0;
-    width: 75%;
-
     &__text {
+      width: 95%;
+      margin-top: 15px;
+      text-align: left;
       color: black;
       font-family: "Roboto", sans-serif;
       font-size: 20px;
@@ -58,26 +47,10 @@
 
 @media (min-width: 980px) {
   .article5 {
-    width: 90vw;
-    margin-bottom: 60px;
-
-    .forceh1 {
-      top: 0;
-      bottom: 150px;
-      left: 0;
-      right: 350px;
-      margin: auto;
-
-    }
-  }
-  .force {
-    top: 50px;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    &__text {
-      width: 40%;
+    .force {
+      &__text {
+        width: 35%;
+      }
     }
   }
 }

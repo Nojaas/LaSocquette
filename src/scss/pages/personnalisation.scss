@@ -1,70 +1,59 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.article {
+  position: relative;
+  background-color: lightpink;
+  height: 80vh;
+  width: 90%;
+  overflow: hidden;
 
-  .custom {
-    position: relative;
-    background-color: lightpink;
-    height: 80vh;
-    width: 90%;
-    overflow: hidden;
+  &__custom {
+    height: 100vh;
+    z-index: 10;
+  }
 
-    &__back {
-      width: 35%;
-      overflow: hidden;
+  &__board {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    width: 50%;
+    height: 80%;
+
+    h1 {
+      font-family: alternate-gothic-no-2-d, sans-serif;
+      background-color: yellow;
     }
 
-    &__board {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      background-color: white;
-      top: 10%;
-      left: 5%;
-      display: flex;
-      width: 50%;
-      height: 80%;
-      
-      h1 {
-        font-family: alternate-gothic-no-2-d,sans-serif;
-        background-color: yellow;
-      }
-
-      &__border {
-
-      }
-
-      &__sock {
-
-      }
-
-      &__logo {
-
-      }
-
-      
+    &__border {
     }
-    
-    &__socks {
+
+    &__sock {
+    }
+
+    &__logo {
+    }
+  }
+
+  &__socks {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+
+    &__color {
       position: absolute;
-      top: 10%;
-      right: 30%;
+      z-index: 1;
+    }
 
-      &__color {
-        position: absolute;
-        z-index: 1;
-      }
+    &__logo {
+      position: absolute;
+      z-index: 2;
+    }
 
-      &__logo {
-        position: absolute;
-        z-index: 2;
-      }
-
-      &__border {
-        position: absolute;
-        z-index: 3;
-      }
+    &__border {
+      position: absolute;
+      z-index: 3;
     }
   }
 }
@@ -77,4 +66,21 @@ svg.button {
 svg.arrow {
   width: 60px;
   height: 30px;
+}
+
+@media (min-width: 980px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    .custom {
+      display: flex;
+      justify-content: start;
+      height: 615px;
+      width: 90vw;
+      margin-bottom: 60px;
+    }
+  }
 }
