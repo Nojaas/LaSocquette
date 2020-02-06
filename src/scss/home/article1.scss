@@ -48,7 +48,9 @@
     }
   }
   &__deco {
+
     &__chaussettes {
+      display: block;
       height: 300px;
       width: auto;
       display: flex;
@@ -69,6 +71,7 @@
         width: auto;
       }
     }
+
     &__chaussettes2 {
       display: none;
     }
@@ -152,13 +155,14 @@
       margin-top: 8%;
       width: 30%;
       height: 60%;
+      
       &__chaussettes {
         height: 350px;
         position: relative;
         margin: 0;
         transform: rotate(180deg);
         padding-top: 15px;
-
+        
         &__sock {
           height: 330px;
         }
@@ -193,6 +197,38 @@
 
       & button:hover {
         background-color: white;
+      }
+    }
+  }
+}
+
+//fixed bug on article1
+@media(max-width:1200px) {
+
+  .article1 {
+    transition: ease 0.3s;
+    &__deco {
+      margin-left: 20%;
+      margin-top: 8%;
+      width: 25%;
+
+      &__chaussettes2 {
+        display: none;
+      }
+    }
+  }
+}
+@media(max-width:980px) {
+
+  .article1 {
+    transition: ease 0.3s;
+    &__deco {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
+
+      &__chaussettes2 {
+        display: none;
       }
     }
   }
