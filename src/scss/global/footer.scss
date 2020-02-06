@@ -13,7 +13,7 @@
 
   &__img {
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
     position: relative;
@@ -22,8 +22,7 @@
   &__info {
     display: flex;
     justify-content: center;
-    
-    width: 100vw;
+    width: 100%;
     height: 160vh;
     background-color: #222222;
 
@@ -163,7 +162,7 @@
   }
   &__info {
    position: relative;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     background-color: #222222;
 
@@ -171,7 +170,7 @@
 
   &__img {
     height: 300px;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
     position: relative;

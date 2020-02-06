@@ -159,6 +159,10 @@
       height: 480px;
       padding-top: 30px;
       cursor: pointer;
+      -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      
 
       &__sock {
         height: 450px;
@@ -175,15 +179,16 @@
       -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        
     }
 
     &__chaussettes2 {
       height: 480px;
       padding-top: 30px;
       cursor: pointer;
+      -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
 
       &__sock2 {
         height: 450px;
@@ -198,9 +203,7 @@
       -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        
     }
 
     &__prix1 {
