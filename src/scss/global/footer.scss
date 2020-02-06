@@ -115,21 +115,24 @@
     
     z-index: 0;
    
-     & h1 {
+     & button {
+      background-color: white;
       color: black;
-      font-family: alternate-gothic-no-2-d,sans-serif;
-      font-weight: 100;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
       text-transform: uppercase;
-      font-size: 38px;
-      
-      & span {
-        background-color: white;
-        display: inline-block;
-        height: 35px;
-        width: 250px;
-      }
+      font-size: 18px;
+      border: solid 2px white;
+      padding: 12px 20px;
+      transition: ease 0.5s;
+      cursor: pointer;
     }
-
+    & button:hover {
+      transition: ease 0.5s;
+      background-color: black;
+      color: white;
+      border: solid 2px black;
+    }
     
 
     
