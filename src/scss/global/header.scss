@@ -136,6 +136,10 @@ header {
                     color: black;
                     text-decoration: none;
                 }
+                & a:hover {
+                    transition: all 80ms ease-in-out;
+                    border-bottom: 0.15em solid #dce5f2;
+                }
             }  
     }   }
   }
@@ -171,6 +175,8 @@ header {
             color: black;
             text-decoration: none;
         }
+
+       
     }
 }
 
