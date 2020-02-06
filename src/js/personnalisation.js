@@ -32,6 +32,11 @@ var buttons = document.querySelectorAll('.button');
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function() {
     let img = document.getElementById(buttons[i].classList);
-    img.setAttribute('src', tab[i]);
+    if (tab[i] !== 'none') {
+      img.setAttribute('src', tab[i]);
+    }
+    else {
+      img.removeAttribute('src');
+    }
   });
 }
