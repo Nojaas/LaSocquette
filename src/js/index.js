@@ -9,6 +9,6 @@ ids.forEach(function(id) {
     handler: function(direction) {
       element.classList.add('is-reached');
     },
-    offset: '75%'
+    offset: '90%'
   });
 });
