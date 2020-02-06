@@ -34,6 +34,7 @@
       margin: 20px;
       padding: 12px 20px;
       cursor: pointer;
+      transition: ease 0.5s;
     }
     & button:hover {
       transition: ease 0.5s;
@@ -88,10 +89,6 @@
       height: 500px;
     }
 
-    &__button {
-      & button {
-      }
-    }
 
     &__title {
       width: 500px;

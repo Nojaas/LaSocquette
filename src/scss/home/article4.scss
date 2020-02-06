@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px;
+  user-select: none;
 
   &__background {
     background-color: #dce5f2;
