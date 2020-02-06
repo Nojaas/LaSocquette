@@ -8,7 +8,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
-@media (min-width: 980px) {
+.article2, .article3, .article4, .article5, .article6 {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.article2.is-reached, .article3.is-reached, .article4.is-reached, .article5.is-reached, .article6.is-reached {
+  opacity: 1;
+  transform: none;
 }
