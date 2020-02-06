@@ -26,7 +26,7 @@
   &__sockrecycle {
     padding-left: 15px;
     padding-right: 60px;
-    height: 220px;
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,7 +39,7 @@
       font-size: 36px;
       color: black;
       text-transform: uppercase;
-      line-height: 100%;
+      
     }
     &__chiffre {
       font-family: alternate-gothic-no-2-d, sans-serif;
@@ -76,7 +76,7 @@
   &__bouton {
     height: auto;
     width: fit-content;
-    margin-left: 25%;
+    margin: auto;
 
     & button {
       background-color: black;
@@ -124,10 +124,10 @@
     }
 
     &__participate {
-      width: 90%;
       font-size: 80px;
       margin: 0px;
       margin-bottom: 20px;
+      width: 110%;
     }
 
     &__aideznous {
