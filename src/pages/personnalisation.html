@@ -99,53 +99,130 @@
       </div>
       <section class="perso">
         <div class="perso__motif">
-          <img src="./../assets/img/motif-1.jpg" alt="" />
+          <img src="./../assets/img/motif-2.jpg" alt="" />
         </div>
-        <div class="perso__title">
-          <div class="perso__title__crayon">
+        <div class="perso__board">
+          <div class="perso__board__crayon">
             <img src="./../assets/img/crayon.svg" alt="" />
           </div>
-          <div class="perso__title__texte">
-            <h1>PERSONNALISEZ VOS CHAUSSETTES !</h1>
-            <h3>
-              Laissez parler votre créativité et exprimez votre style à travers
-              ces chaussettes complètement modulables! Il vous suffit de
-              sélectionner un patron une couleur et un motif pour créer les
-              chaussettes qui vous ressemblent.
-            </h3>
+          <div class="perso__board__text">
+            <img src="./../assets/img/arrow.svg" alt="" />
+            <h1>PERSONNALISEZ LA !</h1>
+            <h2>Créez la chaussette qui correspond à votre personnalité</h2>
+            <div class="perso__board__text__color">
+              <h2>FOND</h2>
+              <div class="perso__board__text__color__buttons">
+                <svg class="button color" id="colorwhite">
+                  <rect
+                    width="15"
+                    height="15"
+                    fill="white"
+                    stroke="grey"
+                    stroke-width="1px"
+                  />
+                </svg>
+                <svg class="button color" id="color_cyan">
+                  <rect width="15" height="15" fill="#45C19C" />
+                </svg>
+                <svg class="button color" id="color_purple">
+                  <rect width="15" height="15" fill="#8A0BAA" />
+                </svg>
+                <svg class="button color" id="color_pink">
+                  <rect width="15" height="15" fill="#ED0791" />
+                </svg>
+                <svg class="button color" id="color_orange">
+                  <rect width="15" height="15" fill="#ED9023" />
+                </svg>
+              </div>
+            </div>
+            <div class="custom__board__border">
+              <h2>BORDS</h2>
+              <div class="custom__board__border__color">
+                <svg class="button border" id="none">
+                  <rect
+                    width="15"
+                    height="15"
+                    fill="white"
+                    stroke="grey"
+                    stroke-width="1px"
+                  />
+                  <line x1="0" y1="15" x2="15" y2="0" stroke="red" />
+                </svg>
+                <svg class="button border" id="border_red">
+                  <rect width="15" height="15" fill="#F45C5C" />
+                </svg>
+                <svg class="button border" id="border_blue">
+                  <rect width="15" height="15" fill="#6BC1F1" />
+                </svg>
+                <svg class="button border" id="border_yellow">
+                  <rect width="15" height="15" fill="#F2F47C" />
+                </svg>
+              </div>
+            </div>
+            <div class="custom__board__logo">
+              <h2>MOTIFS</h2>
+              <div class="custom__board__logo__color">
+                <svg class="button logo" id="none">
+                  <rect
+                    width="15"
+                    height="15"
+                    fill="white"
+                    stroke="grey"
+                    stroke-width="1px"
+                  />
+                  <line x1="0" y1="15" x2="15" y2="0" stroke="red" />
+                </svg>
+                <svg class="button logo" id="circle_green">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#8DF47C" />
+                </svg>
+                <svg class="button logo" id="circle_grey">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#726A6A" />
+                </svg>
+                <svg class="button logo" id="circle_purple">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#CD5CF4" />
+                </svg>
+                <svg class="button logo" id="circle_orange">
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#F1936B" />
+                </svg>
+                <svg class="button logo" id="square_green">
+                  <rect width="15" height="15" fill="#8DF47C" />
+                </svg>
+                <svg class="button logo" id="square_grey">
+                  <rect width="15" height="15" fill="#726A6A" />
+                </svg>
+                <svg class="button logo" id="square_purple">
+                  <rect width="15" height="15" fill="#CD5CF4" />
+                </svg>
+                <svg class="button logo" id="square_orange">
+                  <rect width="15" height="15" fill="#F1936B" />
+                </svg>
+                <svg class="button logo" id="triangle_green">
+                  <polygon points="0,15 15,15 7.5,0" fill="#8DF47C" />
+                </svg>
+                <svg class="button logo" id="triangle_grey">
+                  <polygon points="0,15 15,15 7.5,0" fill="#726A6A" />
+                </svg>
+                <svg class="button logo" id="triangle_purple">
+                  <polygon points="0,15 15,15 7.5,0" fill="#CD5CF4" />
+                </svg>
+                <svg class="button logo" id="triangle_orange">
+                  <polygon points="0,15 15,15 7.5,0" fill="#F1936B" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="perso__deco">
-          <div class="perso__deco__chaussettes">
-            <img
-              class="perso__deco__chaussettes__sock"
-              src="./../assets/img/perso_-_1.png"
-              alt=""
-            />
-            <img
-              class="perso__deco__chaussettes__contour"
-              src="./../assets/img/contour.png"
-              alt=""
-            />
-          </div>
-          <div class="perso__deco__chaussettes2">
-            <img
-              class="perso__deco__chaussettes2__sock2"
-              src="./../assets/img/perso_-_2.png"
-              alt=""
-            />
-            <img
-              class="perso__deco__chaussettes2__contour2"
-              src="./../assets/img/contour.png"
-              alt=""
-            />
-          </div>
+        <div class="perso__sock">
+          <img id="button color" class="perso__sock__color" src="../assets/img/custom/color_white.png">
+          <img id="button logo" class="perso__sock__logo" src="../assets/img/custom/circle_green.png">
+          <img id="button border" class="perso__sock__border" src="../assets/img/custom/border_blue.png">
         </div>
 
         <div class="perso__bouton">
           <button class="buttontest" type="button">
-            c'est parti !
+            ajouter au panier
           </button>
+          <h3>14.99€</h3>
         </div>
       </section>
     </main>
