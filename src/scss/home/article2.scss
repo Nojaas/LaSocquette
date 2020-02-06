@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   background-color: white;
   min-height: 600px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   user-select: none;
   
 
@@ -76,7 +76,7 @@
   &__bouton {
     height: auto;
     width: fit-content;
-    margin-left: 25%;
+    margin: auto;
 
     & button {
       background-color: black;
@@ -164,3 +164,4 @@
     }
   }
 }
+
