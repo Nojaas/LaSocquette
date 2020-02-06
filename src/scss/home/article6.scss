@@ -5,7 +5,7 @@
   background-color: #dce5f2;
   height: 490px;
   position: relative;
-  z-index: -1;
+  z-index: 10;
 
   &__motif {
     width: auto;
@@ -43,8 +43,6 @@
       border: solid 2px black;
     }
   }
-
-  
 
   &__title {
     position: absolute;
@@ -88,7 +86,6 @@
       width: 50%;
       height: 500px;
     }
-
 
     &__title {
       width: 500px;
